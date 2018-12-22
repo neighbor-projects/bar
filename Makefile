@@ -6,7 +6,6 @@ release: build-container
 	docker push neighbor/bar:latest
 
 deploy:
-	kubectl apply -f deploy/secret.yaml
 	kubectl apply -f deploy/deployment.yaml
 
 setup: deploy
