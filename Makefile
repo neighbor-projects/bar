@@ -10,3 +10,5 @@ deploy:
 	kubectl apply -f deploy/deployment.yaml
 
 setup: deploy
+
+.PHONY: build-container release deploy setup
