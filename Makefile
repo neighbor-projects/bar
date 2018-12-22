@@ -8,3 +8,5 @@ release: build-container
 deploy:
 	kubectl apply -f deploy/secret.yaml
 	kubectl apply -f deploy/deployment.yaml
+
+setup: deploy
